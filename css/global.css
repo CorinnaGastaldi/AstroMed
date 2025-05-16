@@ -1,0 +1,20 @@
+html, body {
+    width: 1366px;
+    height: 1024px;
+    padding: 24px;
+    align-items: center;
+}
+
+.logo-text {
+    color: var(--astromed-grey-950);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Trap;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: fit-content;
+}
+
+

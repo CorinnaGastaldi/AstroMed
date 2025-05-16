@@ -1,0 +1,29 @@
+.divider {
+    width: 6px;
+    height: 60px;
+    border-radius: 100px;
+    background: var(--astromed-purple-400);
+}
+
+.accessibility-button {
+    display: flex;
+    height: 64px;
+    padding: 5px 16px 5px 14px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 100px;
+    border: 1.5px solid var(--astromed-grey-200);
+    background: var(--astromed-white);
+}
+
+.language-button {
+    display: flex;
+    height: 64px;
+    padding: 0px 16px 0px 6.5px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 100px;
+    border: 1.5px solid var(--astromed-grey-200);
+    background: var(--astromed-white);
+}
