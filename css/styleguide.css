@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-200.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-400.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-550.ttf') format('truetype');
+    font-weight: 550;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-600.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-650.ttf') format('truetype');
+    font-weight: 650;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-700.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-800.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-900.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspekta';
+    src: url('../fonts/aspekta/Aspekta-1000.ttf') format('truetype');
+    font-weight: 1000;
+    font-style: normal;
+}
+
+
+:root {
+    --title-title-1-font-family: "Trap", Helvetica;
+    --title-title-1-font-weight: 800;
+    --title-title-1-font-size: 48px;
+    --title-title-1-letter-spacing: 0.48px;
+    --title-title-1-line-height: 114.99999761581421%;
+    --title-title-1-font-style: normal;
+
+    --title-title-2-font-family: "Trap", Helvetica;
+    --title-title-2-font-weight: 600;
+    --title-title-2-font-size: 36px;
+    --title-title-2-letter-spacing: 0px;
+    --title-title-2-line-height: 40px;
+    --title-title-2-font-style: normal;
+
+    --body-regular-font-family: "Aspekta", Helvetica;
+    --body-regular-font-weight: 400;
+    --body-regular-font-size: 20px;
+    --body-regular-letter-spacing: 0px;
+    --body-regular-line-height: 24px;
+    --body-regular-font-style: normal;
+
+    --body-light-font-family: "Aspekta", Helvetica;
+    --body-light-font-weight: 400;
+    --body-light-font-size: 20px;
+    --body-light-letter-spacing: 0px;
+    --body-light-line-height: 24px;
+    --body-light-font-style: normal;
+
+    --text-bodyregular-font-family: "Aspekta", Helvetica;
+    --text-bodyregular-font-weight: 400;
+    --text-bodyregular-font-size: 18px;
+    --text-bodyregular-letter-spacing: -0.36px;
+    --text-bodyregular-line-height: 24px;
+    --text-bodyregular-font-style: normal;
+
+    --title-large-title-font-family: "Trap", Helvetica;
+    --title-large-title-font-weight: 500;
+    --title-large-title-font-size: 64px;
+    --title-large-title-letter-spacing: 0px;
+    --title-large-title-line-height: 80px;
+    --title-large-title-font-style: normal;
+
+    --button-font-family: "Aspekta", Helvetica;
+    --button-font-weight: 650;
+    --button-font-size: 22px;
+    --button-letter-spacing: -0.22px;
+    --button-line-height: 24px;
+    --button-font-style: normal;
+
+    --title-title-3-font-family: "Trap", Helvetica;
+    --title-title-3-font-weight: 600;
+    --title-title-3-font-size: 24px;
+    --title-title-3-letter-spacing: 0px;
+    --title-title-3-line-height: 32px;
+    --title-title-3-font-style: normal;
+
+    --body-strong-font-family: "Aspekta", Helvetica;
+    --body-strong-font-weight: 400;
+    --body-strong-font-size: 20px;
+    --body-strong-letter-spacing: 0px;
+    --body-strong-line-height: 24px;
+    --body-strong-font-style: normal;
+
+    --title-title-4-font-family: "Trap", Helvetica;
+    --title-title-4-font-weight: 700;
+
+    --primitives-primitives-purple-50: #F6F7FF;
+    --primitives-primitives-purple-100: #EBE9FE;
+    --primitives-primitives-purple-200: #DAD6FE;
+    --primitives-primitives-purple-300: #BEB5FD;
+    --primitives-primitives-purple-400: #9E8BFA;
+    --primitives-primitives-purple-500: #8463F6;
+    --primitives-primitives-purple-600: #6E3AED;
+    --primitives-primitives-purple-700: #5F28D9;
+    --primitives-primitives-purple-800: #4F21B6;
+    --primitives-primitives-purple-900: #421D95;
+    --primitives-primitives-purple-950: #271065;
+
+    --primitives-primitives-orange-50: #FFF4F1;
+    --primitives-primitives-orange-100: #FFE7E1;
+    --primitives-primitives-orange-200: #FFD2C7;
+    --primitives-primitives-orange-300: #FFB3A0;
+    --primitives-primitives-orange-400: #FF9074;
+    --primitives-primitives-orange-500: #F8613B;
+    --primitives-primitives-orange-600: #E5451D;
+    --primitives-primitives-orange-700: #C13714;
+    --primitives-primitives-orange-800: #A03014;
+    --primitives-primitives-orange-900: #842E18;
+    --primitives-primitives-orange-950: #481407;
+
+    --primitives-primitives-blue-50: #EDFCFE;
+    --primitives-primitives-blue-100: #D2F4FB;
+    --primitives-primitives-blue-200: #A3E6F5;
+    --primitives-primitives-blue-300: #71D6EF;
+    --primitives-primitives-blue-400: #30BAE0;
+    --primitives-primitives-blue-500: #149EC6;
+    --primitives-primitives-blue-600: #147EA6;
+    --primitives-primitives-blue-700: #176687;
+    --primitives-primitives-blue-800: #1C536E;
+    --primitives-primitives-blue-900: #1B475E;
+    --primitives-primitives-blue-950: #0C2D40;
+
+    --primitives-primitives-pink-50: #FEF1F9;
+    --primitives-primitives-pink-100: #FEE5F5;
+    --primitives-primitives-pink-200: #FECCED;
+    --primitives-primitives-pink-300: #FF99DA;
+    --primitives-primitives-pink-400: #FE68C4;
+    --primitives-primitives-pink-500: #F83CAB;
+    --primitives-primitives-pink-600: #E81A89;
+    --primitives-primitives-pink-700: #CA0C6D;
+    --primitives-primitives-pink-800: #A70D59;
+    --primitives-primitives-pink-900: #8B104D;
+    --primitives-primitives-pink-950: #55022B;
+
+    --primitives-primitives-grey-50: #F6F7F9;
+    --primitives-primitives-grey-100: #ECEEF2;
+    --primitives-primitives-grey-200: #D5D8E2;
+    --primitives-primitives-grey-300: #B1B8C8;
+    --primitives-primitives-grey-400: #8691AA;
+    --primitives-primitives-grey-500: #677490;
+    --primitives-primitives-grey-600: #525C77;
+    --primitives-primitives-grey-700: #434B61;
+    --primitives-primitives-grey-800: #3A4052;
+    --primitives-primitives-grey-900: #343846;
+    --primitives-primitives-grey-950: #1A1C23;
+
+    --system-colors-grays-white: #FFFFFF;
+
+    --presets-spacing-space2: 8px;
+
+}
