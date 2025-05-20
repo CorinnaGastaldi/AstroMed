@@ -116,67 +116,67 @@
 }
 
 :root {
-    --astromed-purple-50: #F6F7FF;
-    --astromed-purple-100: #EBE9FE;
-    --astromed-purple-200: #DAD6FE;
-    --astromed-purple-300: #BEB5FD;
-    --astromed-purple-400: #9E8BFA;
-    --astromed-purple-500: #8463F6;
-    --astromed-purple-600: #6E3AED;
-    --astromed-purple-700: #5F28D9;
-    --astromed-purple-800: #4F21B6;
-    --astromed-purple-900: #421D95;
-    --astromed-purple-950: #271065;
+    --am-purple-50: #F6F7FF;
+    --am-purple-100: #EBE9FE;
+    --am-purple-200: #DAD6FE;
+    --am-purple-300: #BEB5FD;
+    --am-purple-400: #9E8BFA;
+    --am-purple-500: #8463F6;
+    --am-purple-600: #6E3AED;
+    --am-purple-700: #5F28D9;
+    --am-purple-800: #4F21B6;
+    --am-purple-900: #421D95;
+    --am-purple-950: #271065;
 
-    --astromed-orange-50: #FFF4F1;
-    --astromed-orange-100: #FFE7E1;
-    --astromed-orange-200: #FFD2C7;
-    --astromed-orange-300: #FFB3A0;
-    --astromed-orange-400: #FF9074;
-    --astromed-orange-500: #F8613B;
-    --astromed-orange-600: #E5451D;
-    --astromed-orange-700: #C13714;
-    --astromed-orange-800: #A03014;
-    --astromed-orange-900: #842E18;
-    --astromed-orange-950: #481407;
+    --am-orange-50: #FFF4F1;
+    --am-orange-100: #FFE7E1;
+    --am-orange-200: #FFD2C7;
+    --am-orange-300: #FFB3A0;
+    --am-orange-400: #FF9074;
+    --am-orange-500: #F8613B;
+    --am-orange-600: #E5451D;
+    --am-orange-700: #C13714;
+    --am-orange-800: #A03014;
+    --am-orange-900: #842E18;
+    --am-orange-950: #481407;
 
-    --astromed-blue-50: #EDFCFE;
-    --astromed-blue-100: #D2F4FB;
-    --astromed-blue-200: #A3E6F5;
-    --astromed-blue-300: #71D6EF;
-    --astromed-blue-400: #30BAE0;
-    --astromed-blue-500: #149EC6;
-    --astromed-blue-600: #147EA6;
-    --astromed-blue-700: #176687;
-    --astromed-blue-800: #1C536E;
-    --astromed-blue-900: #1B475E;
-    --astromed-blue-950: #0C2D40;
+    --am-blue-50: #EDFCFE;
+    --am-blue-100: #D2F4FB;
+    --am-blue-200: #A3E6F5;
+    --am-blue-300: #71D6EF;
+    --am-blue-400: #30BAE0;
+    --am-blue-500: #149EC6;
+    --am-blue-600: #147EA6;
+    --am-blue-700: #176687;
+    --am-blue-800: #1C536E;
+    --am-blue-900: #1B475E;
+    --am-blue-950: #0C2D40;
 
-    --astromed-pink-50: #FEF1F9;
-    --astromed-pink-100: #FEE5F5;
-    --astromed-pink-200: #FECCED;
-    --astromed-pink-300: #FF99DA;
-    --astromed-pink-400: #FE68C4;
-    --astromed-pink-500: #F83CAB;
-    --astromed-pink-600: #E81A89;
-    --astromed-pink-700: #CA0C6D;
-    --astromed-pink-800: #A70D59;
-    --astromed-pink-900: #8B104D;
-    --astromed-pink-950: #55022B;
+    --am-pink-50: #FEF1F9;
+    --am-pink-100: #FEE5F5;
+    --am-pink-200: #FECCED;
+    --am-pink-300: #FF99DA;
+    --am-pink-400: #FE68C4;
+    --am-pink-500: #F83CAB;
+    --am-pink-600: #E81A89;
+    --am-pink-700: #CA0C6D;
+    --am-pink-800: #A70D59;
+    --am-pink-900: #8B104D;
+    --am-pink-950: #55022B;
 
-    --astromed-grey-50: #F6F7F9;
-    --astromed-grey-100: #ECEEF2;
-    --astromed-grey-200: #D5D8E2;
-    --astromed-grey-300: #B1B8C8;
-    --astromed-grey-400: #8691AA;
-    --astromed-grey-500: #677490;
-    --astromed-grey-600: #525C77;
-    --astromed-grey-700: #434B61;
-    --astromed-grey-800: #3A4052;
-    --astromed-grey-900: #343846;
-    --astromed-grey-950: #1A1C23;
+    --am-grey-50: #F6F7F9;
+    --am-grey-100: #ECEEF2;
+    --am-grey-200: #D5D8E2;
+    --am-grey-300: #B1B8C8;
+    --am-grey-400: #8691AA;
+    --am-grey-500: #677490;
+    --am-grey-600: #525C77;
+    --am-grey-700: #434B61;
+    --am-grey-800: #3A4052;
+    --am-grey-900: #343846;
+    --am-grey-950: #1A1C23;
 
-    --astromed-white: #FFFFFF;
+    --am-white: #FFFFFF;
 }
 
 
@@ -263,14 +263,14 @@
 }
 
 .text-color-black {
-    color: var(--astromed-grey-950);
+    color: var(--am-grey-950);
 }
 
 .text-color-white {
-    color: var(--astromed-grey-50);
+    color: var(--am-grey-50);
 }
 
 .text-color-purple {
-    color: var(--astromed-purple-500);
+    color: var(--am-purple-500);
 }
 
