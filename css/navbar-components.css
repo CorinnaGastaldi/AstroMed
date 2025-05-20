@@ -2,7 +2,7 @@
     width: 6px;
     height: 60px;
     border-radius: 100px;
-    background: var(--astromed-purple-400);
+    background: var(--am-purple-400);
 }
 
 .btn-accessibility {
@@ -12,8 +12,8 @@
     align-items: center;
     gap: 12px;
     border-radius: 100px;
-    border: 1.5px solid var(--astromed-grey-200);
-    background: var(--astromed-white);
+    border: 1.5px solid var(--am-grey-200);
+    background: var(--am-white);
     font-family: Aspekta, sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -29,8 +29,8 @@
     align-items: center;
     gap: 16px;
     border-radius: 100px;
-    border: 1.5px solid var(--astromed-grey-200);
-    background: var(--astromed-white);
+    border: 1.5px solid var(--am-grey-200);
+    background: var(--am-white);
     font-family: Aspekta, sans-serif;
     font-size: 18px;
     font-style: normal;
