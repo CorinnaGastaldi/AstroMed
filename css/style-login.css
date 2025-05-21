@@ -45,8 +45,8 @@
 
 .login-option-large {
     border-radius: 50px;
-    background-color: var(--astromed-purple-100);
-    border: 4px solid var(--astromed-purple-500);
+    background-color: var(--am-purple-100);
+    border: 4px solid var(--am-purple-500);
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
