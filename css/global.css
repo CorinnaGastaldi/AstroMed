@@ -11,22 +11,80 @@ html, body {
     margin: 0;
 }
 
+a, nav-link {
+    text-decoration: none;
+}
+
 .main-content {
-    padding: 24px;
+    padding: 1.5rem;
+    height: 100%;
+    width: 100%;
 }
 
 .logo-text {
     color: var(--am-grey-950);
     font-family: Trap, sans-serif;
-    font-size: 40px;
-    font-style: normal;
+    font-size: 1.5rem;
     font-weight: 600;
-    text-box-trim: trim-end;
+}
+
+.logo-text-login {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 0.25rem
 }
 
 .box-shadow {
     box-shadow: 0 30px 8px 0 rgba(132, 99, 246, 0.00), 0 19px 8px 0 rgba(132, 99, 246, 0.01), 0 11px 6px 0 rgba(132, 99, 246, 0.05), 0 5px 5px 0 rgba(132, 99, 246, 0.09), 0 1px 3px 0 rgba(132, 99, 246, 0.10);
 }
 
+
+
+.am-btn-xl {
+    display: flex;
+    padding: 1.5rem 3.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+}
+
+.am-btn-primary {
+    background-color: var(--am-purple-500);
+    color: var(--am-white);
+}
+
+.am-btn-secondary {
+    background-color: var(--am-white);
+    color: var(--am-grey-950);
+}
+
+
+
+.icon-white {
+    fill: var(--am-white);
+}
+
+.icon-black {
+    fill: var(--am-grey-950);
+}
+
+.icon-purple {
+    fill:var(--am-purple-500);
+}
+
+.icon-36 {
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.icon-32 {
+    height: 2rem;
+    width: 2rem;
+}
+
+.icon-24 {
+    height: 1.5rem;
+    width: 1.5rem;
+}
 
 

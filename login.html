@@ -15,7 +15,7 @@
     <script src="js/global-functions.js" defer></script>
     <script src="js/login-functions.js" defer></script>
 
-    <title>AstroMed - Login</title>
+    <title>AstroMed</title>
 </head>
 
 <body>
@@ -70,7 +70,9 @@
             </div>
         </div>
         <button id="al-close-btn" class="al-close-button" onclick="closeALSettings()" type="button">
-            <img src="icons/close-icon-white.svg" alt="Close icon" />
+            <svg class="icon-white icon-36">
+                <use xlink:href="icons/close-icon.svg#close-icon"></use>
+            </svg>
         </button>
     </div>
 
@@ -81,7 +83,7 @@
             <div class="d-flex align-items-center gap-4">
                     <div class="column d-flex items-center gap-3 align-items-center">
                         <img src="icons/astromed-logo.svg" alt="Logo" height="64"/>
-                        <span class="logo-text">AstroMed</span>
+                        <span class="logo-text logo-text-login">AstroMed</span>
                     </div>
                     <div class="column d-flex items-center gap-2 align-items-center">
                         <div class="divider"></div>
@@ -111,22 +113,22 @@
             </div>
             <!-- Login options -->
             <div class="login-grid">
-                <div class="finger login-option login-option-large box-shadow">
+                <a class="finger login-option login-option-large box-shadow" href="index.html">
                     <img class="option-image" src="img/login/fingerprint.png" alt="Fingerprint"/>
                     <h2 class="text-title-2 text-color-purple">Impronta digitale</h2>
-                </div>
-                <div class="eye login-option login-option-large box-shadow">
+                </a>
+                <a class="eye login-option login-option-large box-shadow" href="index.html">
                     <img class="option-image" src="img/login/eye-scan.png" alt="Eye Scan"/>
                     <h2 class="text-title-2 text-color-purple">Scansione retina</h2>
-                </div>
-                <div class="personal-id login-option login-option-small">
+                </a>
+                <a class="personal-id login-option login-option-small" href="index.html">
                     <img class="option-image" src="img/login/personal-id.png" alt="Personal ID"/>
                     <h2 class="text-color-black">Documento di riconoscimento</h2>
-                </div>
-                <div class="manual login-option login-option-small">
+                </a>
+                <a class="manual login-option login-option-small" href="index.html">
                     <img class="option-image" src="img/login/manual-insert.png" alt="Manual Insert"/>
                     <h2 class="text-color-black">Inserimento manuale</h2>
-                </div>
+                </a>
             </div>
             <!-- Help from Astro section -->
             <div class="d-flex justify-content-center flex-row align-items-center gap-4">

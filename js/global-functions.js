@@ -1,5 +1,5 @@
+// Opens the Language and Accessibility settings
 function openALSettings(type) {
-    debugger
     const alSection = document.getElementById("al-section")
     const alLanguage = document.getElementById("language-settings")
     const alAccessibility = document.getElementById("accessibility-settings")
@@ -11,6 +11,7 @@ function openALSettings(type) {
         alAccessibility.classList.remove("d-none");
 }
 
+// Closes the Language and Accessibility settings
 function closeALSettings() {
     const alSection = document.getElementById("al-section")
     const alLanguage = document.getElementById("language-settings")
@@ -20,3 +21,4 @@ function closeALSettings() {
     alLanguage.classList.add("d-none");
     alAccessibility.classList.add("d-none");
 }
+
