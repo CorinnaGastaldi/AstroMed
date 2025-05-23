@@ -15,6 +15,12 @@ a, .nav-link {
     text-decoration: none;
 }
 
+main {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 .main-content {
     padding: 1.5rem;
     height: 100%;
@@ -38,14 +44,21 @@ a, .nav-link {
     box-shadow: 0 30px 8px 0 rgba(132, 99, 246, 0.00), 0 19px 8px 0 rgba(132, 99, 246, 0.01), 0 11px 6px 0 rgba(132, 99, 246, 0.05), 0 5px 5px 0 rgba(132, 99, 246, 0.09), 0 1px 3px 0 rgba(132, 99, 246, 0.10);
 }
 
-
-
-.am-btn-xl {
+.am-btn {
     display: flex;
     padding: 1.5rem 3.5rem;
     justify-content: center;
     align-items: center;
     border-radius: 10rem;
+}
+
+.am-btn-xl {
+    padding: 1.5rem 3.5rem;
+}
+
+.am-btn-s {
+    padding: 1.5rem 3rem;
+    width: fit-content;
 }
 
 .am-btn-primary {
@@ -57,8 +70,6 @@ a, .nav-link {
     background-color: var(--am-white);
     color: var(--am-grey-950);
 }
-
-
 
 .icon-white {
     fill: var(--am-white);

@@ -5,35 +5,29 @@
     background: var(--am-purple-400);
 }
 
-.btn-accessibility {
-    display: flex;
-    height: 64px;
-    padding: 5px 16px 5px 14px;
-    align-items: center;
-    gap: 12px;
-    border-radius: 100px;
-    border: 1.5px solid var(--am-grey-200);
+.nav-btn {
+    height: 4rem;
     background: var(--am-white);
+    border: 1.5px solid var(--am-grey-200);
     font-family: Aspekta, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
+.btn-accessibility {
+    padding: 5px 16px 5px 14px;
+    gap: 0.75rem;
+}
+
 .btn-language {
-    display: flex;
-    height: 64px;
-    padding: 0px 16px 0px 6.5px;
+    padding: 0 16px 0 6.5px;
     justify-content: center;
-    align-items: center;
-    gap: 16px;
-    border-radius: 100px;
-    border: 1.5px solid var(--am-grey-200);
-    background: var(--am-white);
-    font-family: Aspekta, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    gap: 1rem;
+}
+
+.btn-profile {
+    padding: 4px 6.5px 4px 12px;
+    gap: 1rem
 }

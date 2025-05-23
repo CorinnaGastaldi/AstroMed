@@ -22,3 +22,18 @@ function closeALSettings() {
     alAccessibility.classList.add("d-none");
 }
 
+// Opens and closes the sidebar
+function toggleNav() {
+    // Toggle text
+    const elementi = document.querySelectorAll('.nav-pill-text');
+    elementi.forEach(el => {
+        el.classList.toggle('hide-nav-text');
+    });
+
+    // Toggle icons
+    const iconClose = document.getElementById('side-close');
+    const iconOpen = document.getElementById('side-open');
+
+    iconClose.classList.toggle('d-none');
+    iconOpen.classList.toggle('d-none');
+}

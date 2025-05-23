@@ -1,0 +1,55 @@
+.home-grid {
+    display: grid;
+    grid-template-areas:
+        'new-booking manage-bookings manage-bookings'
+        'dossier information talk-to-astro';
+    height: 100%;
+    row-gap: 24px;
+    column-gap: 24px;
+}
+
+.home-grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--am-white);
+    border-radius: 1.875rem;
+    padding: 2rem
+}
+
+.new-booking {
+    grid-area: new-booking;
+    background: linear-gradient(180deg, rgba(132, 99, 246, 0.00) 0%, #8463F6 70%), url('../img/home/new-booking-pattern.png');
+    background-color: var(--am-purple-500, #8463F6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    font-family: Trap, sans-serif;
+    text-align: center;
+    font-size: 1.875rem;
+
+}
+
+.new-booking-button {
+    padding: 20px 56px;
+    border: 2px solid var(--am-purple-600);
+    width: fit-content;
+}
+
+.manage-bookings {
+    grid-area: manage-bookings;
+}
+
+.dossier {
+    grid-area: dossier;
+}
+
+.talk-to-astro {
+    grid-area: talk-to-astro;
+}
+
+.information {
+    grid-area: information;
+}

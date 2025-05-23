@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/style-login.css" />
+    <link rel="stylesheet" href="css/style-home.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/navbar-components.css" />
     <link rel="stylesheet" href="css/accessibility-and-language.css" />
@@ -74,12 +74,13 @@
         </button>
     </div>
 
-    <div class="d-flex main-content">
+    <div class="d-flex main-content gap-4">
+        <!-- Sidebar-->
         <nav class="navbar">
             <div class="menu-container">
                 <div class="navbar-brand">
                     <img src="icons/astromed-logo.svg" alt="AstroMed Logo" />
-                    <span class="logo-text">AstroMed</span>
+                    <span class="logo-text nav-pill-text">AstroMed</span>
                 </div>
                 <ul class="nav">
                     <li class="nav-pill nav-pill-selected">
@@ -87,7 +88,7 @@
                             <svg class="icon-36">
                                 <use xlink:href="icons/home-icon.svg#home-icon"></use>
                             </svg>
-                            <p class="text-body-strong">Home</p>
+                            <p class="text-body-strong nav-pill-text">Home</p>
                         </a>
                     </li>
                     <li class="nav-pill">
@@ -95,7 +96,7 @@
                             <svg class="icon-36">
                                 <use xlink:href="icons/calendar-icon.svg#calendar-icon"></use>
                             </svg>
-                            <p class="text-body-strong">Prenota</p>
+                            <p class="text-body-strong nav-pill-text">Prenota</p>
                         </a>
                     </li>
                     <li class="nav-pill">
@@ -103,7 +104,7 @@
                             <svg class="icon-36">
                                 <use xlink:href="icons/appointments-icon.svg#appointments-icon"></use>
                             </svg>
-                            <p class="text-body-strong">Appuntamenti</p>
+                            <p class="text-body-strong nav-pill-text">Appuntamenti</p>
                         </a>
                     </li>
                     <li class="nav-pill">
@@ -111,7 +112,7 @@
                             <svg class="icon-36">
                                 <use xlink:href="icons/dossier-icon.svg#dossier-icon"></use>
                             </svg>
-                            <p class="text-body-strong">Dossier</p>
+                            <p class="text-body-strong nav-pill-text">Dossier</p>
                         </a>
                     </li>
                     <li class="nav-pill">
@@ -119,7 +120,7 @@
                             <svg class="icon-36">
                                 <use xlink:href="icons/info-icon.svg#info-icon"></use>
                             </svg>
-                            <p class="text-body-strong">Informazioni</p>
+                            <p class="text-body-strong nav-pill-text">Informazioni</p>
                         </a>
                     </li>
                 </ul>
@@ -127,27 +128,75 @@
             <div class="bottom-menu-container">
                 <ul class="nav">
                     <li class="nav-pill">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" onclick="openALSettings('accessibility')">
                             <img src="icons/accessibility-icon.svg" alt="Accessibility">
-                            <p class="text-body-strong">Accessibilità</p>
+                            <p class="text-body-strong nav-pill-text">Accessibilità</p>
                         </a>
                     </li>
                     <li class="nav-pill">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="login.html">
                             <img src="icons/logout-icon.svg" alt="Logout">
-                            <p class="text-body-strong">Esci</p>
+                            <p class="text-body-strong nav-pill-text">Esci</p>
                         </a>
                     </li>
                 </ul>
                 <span class="horizontal-divider"></span>
                 <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img src="icons/side-close-icon.svg" alt="Close Sidebar" />
-                        <img src="icons/side-open-icon.svg" alt="Open Sidebar" class="d-none"/>
+                    <a class="nav-link" href="#" onclick="toggleNav()">
+                        <img src="icons/side-close-icon.svg" id="side-close" alt="Close Sidebar" />
+                        <img src="icons/side-open-icon.svg" id="side-open" alt="Open Sidebar" class="d-none"/>
                     </a>
                 </div>
             </div>
         </nav>
+
+        <!-- Main page content -->
+        <main class="container d-flex flex-column mt-2">
+            <!-- Top navigation -->
+            <div class="d-flex flex-row justify-content-between mb-3">
+                <div class="column d-flex items-center gap-2 align-items-center">
+                    <div class="divider"></div>
+                    <div class="d-flex flex-column" style="gap: -5px">
+                        <span id="nav-time" class="text-title-2 text-color-black">16:37</span>
+                        <span id="nav-date" class="text-body-regular text-color-black">Giovedì, 25 Luglio 3045 </span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="am-btn nav-btn btn-language" onclick="openALSettings('language')" type="button">
+                        <img src="img/flags/flag-italian.png" alt="Italian Flag" height="51"/>
+                        <span>Italiano</span>
+                    </button>
+                    <button class="am-btn nav-btn btn-profile" type="button">
+                        <img src="icons/settings-icon.svg" alt="Accessibility Icon"/>
+                        <img src="img/user-image.png" alt="Italian Flag" height="51"/>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="d-flex flex-column gap-4 mt-4">
+                <h1 class="text-title-large text-color-black">Benvenuto, Angelo!</h1>
+                <div class="home-grid">
+                    <div class="new-booking home-grid-card">
+                        <img src="img/home/new-booking-calendar.png" alt="Banner Booking" style="width: 155px; height: 154px;"/>
+                        <div class="d-flex flex-column align-items-center gap-2">
+                            <h2 class="text-title-2 text-color-white">Vuoi prenotare una visita?</h2>
+                            <button class="am-btn am-btn-secondary new-booking-button">
+                                <span class="text-button text-color-black">Inizia</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="manage-bookings home-grid-card">
+                        <h2 class="text-title-2 text-color-black">Gestisci appuntamenti</h2>
+                    </div>
+                    <div class="dossier home-grid-card"></div>
+                    <div class="information home-grid-card"></div>
+                    <div class="talk-to-astro home-grid-card"></div>
+                </div>
+            </div>
+
+        </main>
 
 
     </div>
