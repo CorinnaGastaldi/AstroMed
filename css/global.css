@@ -15,6 +15,12 @@ a, .nav-link {
     text-decoration: none;
 }
 
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 main {
     max-width: 100% !important;
     padding-left: 0 !important;
@@ -54,6 +60,8 @@ main {
 
 .am-btn-xl {
     padding: 1.5rem 3.5rem;
+    width: 100%;
+    border: none;
 }
 
 .am-btn-s {
@@ -64,11 +72,13 @@ main {
 .am-btn-primary {
     background-color: var(--am-purple-500);
     color: var(--am-white);
+    box-shadow: 0 4px 10px 0 rgba(132, 99, 246, 0.35);
 }
 
 .am-btn-secondary {
     background-color: var(--am-white);
     color: var(--am-grey-950);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
 .icon-white {
@@ -81,6 +91,15 @@ main {
 
 .icon-purple {
     fill:var(--am-purple-500);
+}
+
+.icon-lightgrey {
+    fill: var(--am-grey-400);
+}
+
+.icon-40 {
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 .icon-36 {
@@ -97,5 +116,4 @@ main {
     height: 1.5rem;
     width: 1.5rem;
 }
-
 

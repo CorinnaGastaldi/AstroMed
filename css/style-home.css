@@ -3,9 +3,11 @@
     grid-template-areas:
         'new-booking manage-bookings manage-bookings'
         'dossier information talk-to-astro';
-    height: 100%;
-    row-gap: 24px;
-    column-gap: 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 23.25rem));
+    height: 47.25rem;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
 }
 
 .home-grid-card {
@@ -14,7 +16,9 @@
     align-items: center;
     background-color: var(--am-white);
     border-radius: 1.875rem;
-    padding: 2rem
+    padding: 2rem;
+    min-height: 23.25rem;
+    min-width: 20rem;
 }
 
 .new-booking {
@@ -24,18 +28,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 1rem 2rem;
-    gap: 2rem;
+    padding: 1rem 2rem 2.5rem 2rem;
+    gap: 1rem;
     font-family: Trap, sans-serif;
     text-align: center;
     font-size: 1.875rem;
-
-}
-
-.new-booking-button {
-    padding: 20px 56px;
-    border: 2px solid var(--am-purple-600);
-    width: fit-content;
+    max-width: 23.625rem;
 }
 
 .manage-bookings {
@@ -44,10 +42,22 @@
 
 .dossier {
     grid-area: dossier;
+    max-width: 23.625rem;
 }
 
 .talk-to-astro {
     grid-area: talk-to-astro;
+    background-image: url('../img/home/talk-to-astro-background.png');
+    padding: 1.5rem 1.75rem;
+    align-items: start;
+    clip-path: border-box;
+    gap: 0.5rem;
+}
+
+.talk-to-astro-image {
+    position: absolute;
+    right: 16px;
+    bottom: -8px;
 }
 
 .information {

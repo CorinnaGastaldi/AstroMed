@@ -266,6 +266,10 @@
     color: var(--am-grey-950);
 }
 
+.text-color-lightgrey {
+    color: var(--am-grey-400);
+}
+
 .text-color-white {
     color: var(--am-grey-50);
 }
