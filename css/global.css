@@ -141,3 +141,20 @@ button[disabled]{
     width: 1.5rem;
 }
 
+.profile-rectangle{
+    width: 0.375rem;
+    height: 3rem;
+    border-radius: 10rem;
+}
+
+.profile-rectangle-orange{
+    background-color: var(--am-orange-400);
+}
+
+.profile-rectangle-blue{
+    background-color: var(--am-blue-400);
+}
+
+.profile-rectangle-pink{
+    background-color: var(--am-pink-400);
+}

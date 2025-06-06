@@ -90,4 +90,10 @@
     background-color: var(--am-grey-200);
 }
 
+.horizontal-divider-s {
+    height: 1px;
+    width: 100%;
+    background-color: var(--am-grey-200);
+}
+
 
