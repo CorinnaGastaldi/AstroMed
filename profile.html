@@ -84,7 +84,7 @@
                 </div>
                 <ul class="nav">
                     <li class="nav-pill">
-                        <a class="nav-link">
+                        <a class="nav-link" href="home.html">
                             <svg class="icon-36">
                                 <use xlink:href="icons/home-icon.svg#home-icon"></use>
                             </svg>
@@ -153,6 +153,7 @@
         <!-- Main page content -->
         <main class="container d-flex flex-column mt-2">
             <!-- Top navigation -->
+            <!-- Top navigation -->
             <div class="d-flex flex-row justify-content-between mb-3">
                 <div class="column d-flex items-center gap-2 align-items-center">
                     <div class="divider"></div>
@@ -179,10 +180,12 @@
                             <img src="img/flags/flag-italian.png" alt="Italian flag" height="51"/>
                             <span>Italiano</span>
                         </button>
-                        <button class="am-btn nav-btn btn-profile" type="button">
-                            <img src="icons/settings-icon.svg" alt="Settings icon"/>
-                            <img src="img/user-image.png" alt="User propic" height="51"/>
-                        </button>
+                        <a href="profile.html">
+                            <button class="am-btn nav-btn btn-profile" type="button">
+                                <img src="icons/settings-icon.svg" alt="Settings icon"/>
+                                <img src="img/user-image.png" alt="User propic" height="51"/>
+                            </button>
+                        </a>
                     </div>
                 </div>
 
@@ -192,7 +195,7 @@
             <div class="d-flex flex-column gap-4 mt-4">
                 <div class="d-flex flex-row justify-content-between align-items-center">
                     <a href="home.html">
-                        <button class="am-btn am-btn-secondary text-button text-color-black">Indietro</button>
+                        <button class="am-btn am-btn-secondary text-button-strong text-color-black">Indietro</button>
                     </a>
                     <h1 class="text-title-2 text-color-black">Profilo utente</h1>
                 </div>
@@ -209,27 +212,27 @@
                         </div>
                         <div class="container px-3">
                             <div class="row mb-4">
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Nome</p>
                                     <p class="text-body-strong text-color-black">Angelo</p>
                                 </div>
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Cognome</p>
                                     <p class="text-body-strong text-color-black">Spina</p>
                                 </div>
                             </div>
                             <div class="row mb-4">
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Data di nascita</p>
                                     <p class="text-body-strong text-color-black">03/05/3000</p>
                                 </div>
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Sesso</p>
                                     <p class="text-body-strong text-color-black">Uomo</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">N° riconoscimento universale</p>
                                     <p class="text-body-strong text-color-black">6565F65RGL97H6778</p>
                                 </div>
@@ -248,27 +251,27 @@
                         </div>
                         <div class="container px-3">
                             <div class="row mb-4">
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Unità abitativa</p>
                                     <p class="text-body-strong text-color-black">Condominio Stardust</p>
                                 </div>
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Sistema stellare</p>
                                     <p class="text-body-strong text-color-black">44esima Stella Cadente</p>
                                 </div>
                             </div>
                             <div class="row mb-4">
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Orbita</p>
                                     <p class="text-body-strong text-color-black">Gamma</p>
                                 </div>
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Settore</p>
                                     <p class="text-body-strong text-color-black">8</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Galassia</p>
                                     <p class="text-body-strong text-color-black">Terza Galassia</p>
                                 </div>
@@ -283,15 +286,14 @@
                                 <h2 class="text-title-3 text-color-black">Contatti</h2>
                             </div>
                             <button class="am-btn am-btn-regular text-button text-color-black">Modifica</button>
-
                         </div>
                         <div class="container px-3">
                             <div class="row">
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Email</p>
                                     <p class="text-body-strong text-color-black">angispina01@saturno.gal</p>
                                 </div>
-                                <div class="col gap-1 align-items-start">
+                                <div class="col d-flex flex-column gap-1 align-items-start">
                                     <p class="text-body-light text-color-black">Telefono</p>
                                     <p class="text-body-strong text-color-black">+74 024 7475 4765 9</p>
                                 </div>

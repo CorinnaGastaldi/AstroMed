@@ -182,10 +182,12 @@
                         <img src="../img/flags/flag-italian.png" alt="Italian flag" height="51"/>
                         <span>Italiano</span>
                     </button>
-                    <button class="am-btn nav-btn btn-profile" type="button">
-                        <img src="../icons/settings-icon.svg" alt="Settings icon"/>
-                        <img src="../img/user-image.png" alt="User propic" height="51"/>
-                    </button>
+                    <a href="../profile.html">
+                        <button class="am-btn nav-btn btn-profile" type="button">
+                            <img src="../icons/settings-icon.svg" alt="Settings icon"/>
+                            <img src="../img/user-image.png" alt="User propic" height="51"/>
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -239,7 +241,7 @@
             <div class="container-fluid d-flex flex-column align-items-start content-gap">
 
                 <!-- Performance selection -->
-                <div class="container-fluid d-flex flex-column gap-4 content-overflow-regular">
+                <div class="container-fluid d-flex flex-column gap-4" style="height: 630px">
                     <!-- Searchbar -->
                     <div class="d-flex align-items-center flex-row gap-3">
                         <form class="container-fluid d-flex new-booking-searchbar" onsubmit="handleSearch(event)">
@@ -262,7 +264,7 @@
 
                     <!-- Available performances -->
                     <div id="available-performances"
-                         class="container-fluid d-flex flex-column align-items-center gap-3 overflow-auto"
+                         class="container-fluid d-flex flex-column align-items-center gap-2 overflow-auto"
                          style="padding-right: 1px"
                     >
                         <!-- Filled with performances.json -->
@@ -275,26 +277,21 @@
                     <a href="../home.html"
                         class="button-link"
                     >
-                        <button class="am-btn am-btn-secondary am-btn-xl"
+                        <button class="am-btn am-btn-secondary am-btn-xl text-button-strong text-color-black"
                                 type="button"
                         >
-                        <span class="text-button text-color-black">
                             Indietro
-                        </span>
                         </button>
                     </a>
-
                     <a href="../new-booking/new-booking-doctor-selection.html"
                        class="button-link"
                     >
                         <button id="continue-button"
-                                class="am-btn am-btn-primary am-btn-xl"
+                                class="am-btn am-btn-primary am-btn-xl text-button-strong text-color-white"
                                 type="button"
                                 disabled
                         >
-                        <span class="text-button text-color-white">
                             Scegli il medico
-                        </span>
                         </button>
                     </a>
 

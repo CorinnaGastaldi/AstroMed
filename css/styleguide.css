@@ -189,6 +189,15 @@
     letter-spacing: -0.22px;
 }
 
+.text-button-strong {
+    font-family: Aspekta, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: 24px;
+    letter-spacing: -0.22px;
+}
+
 .text-title-large {
     font-family: Trap, sans-serif;
     font-size: 64px;
