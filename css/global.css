@@ -75,6 +75,15 @@ main {
     box-shadow: 0 4px 10px 0 rgba(132, 99, 246, 0.35);
 }
 
+button:disabled,
+button[disabled]{
+    opacity: 0.4;
+}
+
+.button-link {
+    width: 100%;
+}
+
 .am-btn-secondary {
     background-color: var(--am-white);
     color: var(--am-grey-950);
@@ -95,6 +104,10 @@ main {
 
 .icon-lightgrey {
     fill: var(--am-grey-400);
+}
+
+.icon-blue {
+    fill: var(--am-blue-500);
 }
 
 .icon-40 {

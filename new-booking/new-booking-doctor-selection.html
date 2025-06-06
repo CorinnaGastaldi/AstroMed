@@ -8,12 +8,15 @@
 
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/styleguide.css" />
-    <link rel="stylesheet" href="../css/new-booking/style-new-booking.css" />
+    <link rel="stylesheet" href="../css/new-booking/new-booking-styles.css" />
+    <link rel="stylesheet" href="../css/new-booking/doctor-selection-styles.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
     <link rel="stylesheet" href="../css/navbar-components.css" />
     <link rel="stylesheet" href="../css/accessibility-and-language.css" />
 
     <script src="../js/global-functions.js" defer></script>
+    <script src="../js/new-booking-functions.js" defer></script>
+    <script src="../js/doctor-selection-functions.js" type="module" defer></script>
     <title>AstroMed</title>
 </head>
 <body>
@@ -189,18 +192,18 @@
         </div>
 
         <!-- Main content -->
-        <div class="container-fluid d-flex flex-column align-items-center gap-5 mt-4">
+        <main class="container-fluid d-flex flex-column align-items-center gap-5 mt-4">
             <!-- Steps -->
             <div class="steps-container d-flex flex-row">
                 <div class="step-container d-flex flex-column align-items-center">
-                    <img src="../icons/booking-step-current-icon.svg" alt="Current step" class="icon-40" />
+                    <img src="../icons/booking-step-completed-icon.svg" alt="Current step" class="icon-40" />
                     <span class="text-color-black text-body-strong step-container-text">Scelta prestazione</span>
                 </div>
                 <div class="d-flex align-items-center step-divider-container">
-                    <div class="step-divider-next horizontal-divider"></div>
+                    <div class="step-divider-prev horizontal-divider"></div>
                 </div>
                 <div class="step-container d-flex flex-column align-items-center">
-                    <img src="../icons/booking-step-next-icon.svg" alt="Next step" class="icon-40" />
+                    <img src="../icons/booking-step-current-icon.svg" alt="Next step" class="icon-40" />
                     <span class="text-color-black text-body-strong step-container-text">Scelta medico</span>
                 </div>
                 <div class="d-flex align-items-center step-divider-container">
@@ -235,41 +238,102 @@
 
             <div class="container-fluid d-flex flex-column align-items-start content-gap">
 
-                <!-- Performance select -->
-                <div class="container" style="height: 630px">
+                <!-- Performance selection -->
+                <div class="container-fluid d-flex flex-column gap-4" style="height: 630px">
+                    <!-- Searchbar -->
                     <div class="d-flex align-items-center flex-row gap-3">
-                        <div class="container-fluid d-flex new-booking-searchbar">
+                        <form class="container-fluid d-flex new-booking-searchbar" onsubmit="handleSearch(event)">
                             <svg class="icon-24 icon-lightgrey">
                                 <use xlink:href="../icons/search-icon.svg#search-icon"></use>
                             </svg>
-                            <span class="text-body-light text-color-lightgrey">Cerca una prestazione</span>
-                        </div>
+                            <input type="search"
+                                   class="form-control border-0 bg-transparent text-body-light"
+                                   placeholder="Cerca un medico, un reparto o una specializzazione"
+                                   id="search-text"
+                                   value=""
+                                   aria-label="Cerca un medico, un reparto o una specializzazione"
+                            />
+                        </form>
+
                         <div class="d-flex new-booking-searchbar new-booking-searchbar-filter">
                             <img src="../icons/filter-icon.svg" alt="Filter Search" class="icon-24" />
                         </div>
                     </div>
 
+                    <!-- Available performances -->
+                    <div id="available-doctors"
+                         class="container-fluid d-flex flex-column align-items-center gap-3 overflow-auto"
+                         style="padding-right: 1px"
+                    >
+                        <!-- Filled with performances.json -->
+                        <div class="doctor-card">
+                            <div class="d-flex flex-row gap-3 align-items-center">
+                                <img class="doctor-card-image" src="../img/doctor-image.png" alt="Doctor image" />
+                                <div class="container-fluid doctor-info-container">
+                                    <h3 class="text-title-3 text-color-black">
+                                        Dr. Seo Jun Kim
+                                    </h3>
+                                    <div class="doctor-info-container-row">
+                                        <img src="../icons/specialization-icon.svg"></img>
+                                        <p class="text-body-light text-color-black">Ortopedico</p>
+                                    </div>
+                                    <div class="doctor-info-container-row">
+                                        <img src="../icons/department-icon.svg"></img>
+                                        <p class="text-body-light text-color-black">Reparto di Ortopedica</p>
+                                    </div>
 
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center gap-5">
+                                <a>
+                                    <button class="am-btn doctor-profile-btn text-button text-color-black" type="button">
+                                        Vedi profilo
+                                    </button>
+                                </a>
+
+                                <svg class="icon-32 icon-blue">
+                                    <use xlink:href="../icons/check-icon.svg#check-icon"></use>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
                 <!-- Buttons -->
                 <div class="container-fluid d-flex align-items-center gap-3">
-                    <button class="am-btn am-btn-secondary am-btn-xl" type="button">
+                    <a href="../new-booking/new-booking-performance-selection.html"
+                       class="button-link"
+                    >
+                        <button class="am-btn am-btn-secondary am-btn-xl"
+                                type="button"
+                        >
                         <span class="text-button text-color-black">
                             Indietro
                         </span>
-                    </button>
-                    <button class="am-btn am-btn-primary am-btn-xl">
+                        </button>
+                    </a>
+
+                    <a href=""
+                       class="button-link"
+                    >
+                        <button id="continue-button"
+                                class="am-btn am-btn-primary am-btn-xl"
+                                type="button"
+                                disabled
+                        >
                         <span class="text-button text-color-white">
-                            Scegli il medico
+                            Scegli l'orario
                         </span>
-                    </button>
+                        </button>
+                    </a>
+
                 </div>
             </div>
-        </div>
+        </main>
     </main>
-
 
 </div>
 
