@@ -7,6 +7,16 @@ html, body {
     overflow: hidden;
 }
 
+.content-overflow-long {
+    height: 48rem;
+    padding-right: 1px;
+}
+
+.content-overflow-regular {
+    height: 630px;
+    padding-right: 1px;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
