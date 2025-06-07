@@ -168,3 +168,21 @@ button[disabled]{
 .profile-rectangle-pink{
     background-color: var(--am-pink-400);
 }
+
+
+.img-40 {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.img-51 {
+    height: 3.1875rem;
+    width: 3.1875rem;
+    aspect-ratio: 1/1;
+}
+
+.img-90 {
+    height: 5.625rem;
+    width: 5.625rem;
+    aspect-ratio: 1/1;
+}
