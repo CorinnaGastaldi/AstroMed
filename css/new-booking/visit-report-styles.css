@@ -1,0 +1,15 @@
+.report-container {
+  display: flex;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  width: 100%;
+  gap: 1rem;
+  height: 622px;
+
+  border-radius: 1.25rem;
+  border: 1.5px solid var(--am-grey-200);
+  background: var(--am-white);
+}
