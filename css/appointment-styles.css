@@ -1,0 +1,19 @@
+.appointment-container {
+    display: flex;
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
+    align-items: center;
+
+    width: 100%;
+    flex-direction: row;
+
+    border-radius: 1.25rem;
+    border: 1.5px solid var(--am-grey-200);
+    background: var(--am-white);
+}
+
+.vertical-divider-s{
+    width: 68px;
+    transform: rotate(-90deg);
+    height: 2px;
+    background-color: var(--am-grey-200);
+}
