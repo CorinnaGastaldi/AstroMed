@@ -185,6 +185,12 @@ button[disabled]{
     aspect-ratio: 1/1;
 }
 
+.img-32 {
+    height: 2rem;
+    width: 2rem;
+    aspect-ratio: 1/1;
+}
+
 .img-36 {
     height: 2.25rem;
     width: 2.25rem;

@@ -4,9 +4,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.94rem;
-    flex: 1 0 0;
     width: 100%;
-
     border-radius: 1.25rem;
     border: 1.5px solid var(--am-grey-200);
     background: var(--am-white);
@@ -17,7 +15,6 @@
     padding: 0.5rem;
     align-items: center;
     gap: 0.625rem;
-
     border-radius: 100px;
     border: 2px solid var(--am-grey-300);
     background: var(--am-white);
@@ -25,7 +22,7 @@
 
 .dossier-item{
     display: flex;
-    padding: 0rem 1rem 0rem 0rem;
+    padding: 0 1rem 0 0;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
