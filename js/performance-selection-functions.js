@@ -63,7 +63,7 @@ function renderPerformances(list) {
         `;
 
         container.appendChild(card);
-    })};
+    })}
 
 function handleSearch(event) {
     const query = event.target.value.toLowerCase();
@@ -71,7 +71,7 @@ function handleSearch(event) {
         item.name.toLowerCase().includes(query)
     );
     renderPerformances(filtered);
-};
+}
 
 // Updates the selected performance card in the choice performance page
 document.getElementById('available-performances').addEventListener('click', function (event) {
