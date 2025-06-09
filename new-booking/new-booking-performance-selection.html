@@ -252,7 +252,7 @@
                                    id="search-text"
                                    value=""
                                    aria-label="Cerca una prestazione"
-                            />
+                            >
                         </form>
 
                         <div class="d-flex new-booking-searchbar new-booking-searchbar-filter">
@@ -277,17 +277,14 @@
                     >
                         Indietro
                     </a>
-                    <a href="../new-booking/new-booking-doctor-selection.html"
-                       class="button-link"
+                    <button id="continue-button"
+                            class="am-btn am-btn-primary am-btn-xl text-button-strong text-color-white"
+                            type="button"
+                            disabled
+                            onclick="handleContinue('new-booking-doctor-selection.html')"
                     >
-                        <button id="continue-button"
-                                class="am-btn am-btn-primary am-btn-xl text-button-strong text-color-white"
-                                type="button"
-                                disabled
-                        >
-                            Scegli il medico
-                        </button>
-                    </a>
+                        Scegli il medico
+                    </button>
                 </div>
             </div>
         </div>
