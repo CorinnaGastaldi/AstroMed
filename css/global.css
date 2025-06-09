@@ -218,3 +218,9 @@ button[disabled]{
   height: 18.875rem;
   width: 18.875rem;
 }
+
+.img-map{
+  width: 64.03rem;
+  height: 15.41rem;
+  flex-shrink: 0;
+}

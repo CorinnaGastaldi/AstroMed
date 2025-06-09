@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/styleguide.css">
-  <link rel="stylesheet" href="css/map-styles.css">
+  <link rel="stylesheet" href="css/information-page-styles.css">
   <link rel="stylesheet" href="css/sidebar.css">
   <link rel="stylesheet" href="css/navbar-components.css">
   <link rel="stylesheet" href="css/accessibility-and-language.css">
@@ -191,65 +191,103 @@
     <!-- Main content -->
     <div class="d-flex flex-column gap-4 mt-4">
       <div class="d-flex flex-row justify-content-between align-items-center">
-        <a href="information-page.html" class="am-btn am-btn-secondary text-button-strong text-color-black">
+        <a href="home.html" class="am-btn am-btn-secondary text-button-strong text-color-black">
           Indietro
         </a>
         <h1 class="text-title-2 text-color-black">Informazioni</h1>
       </div>
 
-      <div class="d-flex flex-column gap-3 align-items-start overflow-y-auto" style="height:768px">
-        <div class="info-map-container">
-          <h2 class="text-title-2 text-color-black">Ambulatorio 42 - Ortopedia</h2>
-          <div class="d-flex flex-row align-items-center gap-5 px-4 py-0">
-            <img src="img/maps/map-detail.png" alt="Map detail" class="img-100">
-            <div class="d-flex flex-column align-items-start gap-3">
-              <p class="text-body-regular text-color-dark-grey">L'<b>Ambulatorio di Ortopedia</b> AstroCare è un centro medico specializzato nella diagnosi, trattamento e riabilitazione delle patologie osteo-articolari. </p>
-              <div class="horizontal-divider-s"></div>
-              <p class="text-body-strong text-color-black">Orari</p>
-              <div class="container-fluid d-flex flex-row justify-content-between">
-                <p class="text-body-regular text-color-dark-grey">Lunedì - Venerdì</p>
-                <p class="text-body-regular text-color-dark-grey">8:30 - 19:00</p>
-              </div>
-              <div class="container-fluid d-flex flex-row justify-content-between">
-                <p class="text-body-regular text-color-dark-grey">Sabato</p>
-                <p class="text-body-regular text-color-dark-grey">9:00 - 12:00</p>
-              </div>
-              <div class="horizontal-divider-s"></div>
-              <p class="text-body-strong text-color-black">Sede e contatti</p>
-              <div class="container-fluid d-flex flex-row justify-content-between">
-                <p class="text-body-regular text-color-dark-grey">Ortopedia</p>
-                <p class="text-body-regular text-color-dark-grey">AstroCare Nebula Ala G16</p>
-              </div>
-              <div class="container-fluid d-flex flex-row justify-content-between">
-                <p class="text-body-regular text-color-dark-grey">Telefono</p>
-                <p class="text-body-regular text-color-dark-grey">+345 2020876</p>
-              </div>
-              <div class="horizontal-divider-s"></div>
-            </div>
+      <div class="info-container">
+        <div class="d-flex flex-column align-items-center gap-4">
+          <img class="img-map" src="img/maps/map-image.png" alt="Map image">
+          <!-- Category selector -->
+          <div class="button-container">
+            <button class="category-button category-button-active" data-category="all">
+              <span class="text-button text-color-purple">Tutte le informazioni</span>
+            </button>
+            <button class="category-button" data-category="Ambulatori">
+              <span class="text-button text-color-dark-grey">Ambulatori</span>
+            </button>
+            <button class="category-button" data-category="Reparto">
+              <span class="text-button text-color-dark-grey">Reparti</span>
+            </button>
+            <button class="category-button" data-category="Servizi">
+              <span class="text-button text-color-dark-grey">Servizi</span>
+            </button>
+            <button class="category-button" data-category="Negozi">
+              <span class="text-button text-color-dark-grey">Negozi</span>
+            </button>
+            <button class="category-button" data-category="Ristorazione">
+              <span class="text-button text-color-dark-grey">Ristorazione</span>
+            </button>
           </div>
-          <p class="text-body-regular text-color-dark-grey">Presso il nostro ambulatorio, un team di ortopedici esperti si occupa di malattie e infortuni che riguardano le ossa, le articolazioni, i muscoli e i tendini, come fratture, distorsioni, artrosi, tendiniti e scoliosi. Offriamo anche consulenze per la gestione del dolore muscolo-scheletrico e trattamenti riabilitativi, inclusi fisioterapia e terapie fisiche.</p>
         </div>
-        <div class="info-map-container">
-          <div class="container-fluid d-flex flex-row justify-content-between align-items-center">
-            <div class="d-flex flex-row align-items-center gap-3">
-              <div class="profile-rectangle profile-rectangle-pink"></div>
-              <h2 class="text-title-3 text-color-black">Prestazioni</h2>
+        <!-- Departments -->
+        <div class="d-flex flex-column gap-3 overflow-y-auto">
+          <div class="d-flex flex-row align-items-start gap-3">
+            <a href="map-info.html" class="container-fluid department-container d-flex flex-column" data-type="Reparto">
+              <div class="d-flex flex-column">
+                <p class="text-title-3 text-color-black">Ortopedia</p>
+                <p class="text-body-caption text-color-dark-grey">Reparto</p>
+              </div>
+              <div class="d-flex flex-row gap-2 align-items-center">
+                <img src="icons/pointer-icon.svg" alt="Pointer icon" width="24px" height="24px">
+                <p class="text-body-regular text-color-dark-grey">Primo piano - Ala 2</p>
+              </div>
+            </a>
+            <div class="container-fluid department-container" data-type="Reparto">
+              <div class="d-flex flex-column">
+                <p class="text-title-3 text-color-black">Cardiologia</p>
+                <p class="text-body-caption text-color-dark-grey">Reparto</p>
+              </div>
+              <div class="d-flex flex-row gap-2 align-items-center">
+                <img src="icons/pointer-icon.svg" alt="Pointer icon" width="24px" height="24px">
+                <p class="text-body-regular text-color-dark-grey">Secondo piano - Ala 2</p>
+              </div>
+            </div>
+            <div class="container-fluid department-container" data-type="Servizi">
+              <div class="d-flex flex-column">
+                <p class="text-title-3 text-color-black">Centro informazioni</p>
+                <p class="text-body-caption text-color-dark-grey">Servizi</p>
+              </div>
+              <div class="d-flex flex-row gap-2 align-items-center">
+                <img src="icons/pointer-icon.svg" alt="Pointer icon" width="24px" height="24px">
+                <p class="text-body-regular text-color-dark-grey">Piano terra - Ingresso 1</p>
+              </div>
             </div>
           </div>
-          <div class="d-flex flex-column align-items-start w-100">
-            <p class="text-body-regular text-color-dark-grey py-3">Diagnosi e trattamento di fratture ossee</p>
-            <div class="horizontal-divider-s"></div>
-            <p class="text-body-regular text-color-dark-grey py-3">Chirurgia ortopedica robot-assistita</p>
-            <div class="horizontal-divider-s"></div>
-            <p class="text-body-regular text-color-dark-grey py-3">Terapie rigenerative per tessuti muscolo-scheletrici</p>
-            <div class="horizontal-divider-s"></div>
-            <p class="text-body-regular text-color-dark-grey py-3">Protesi articolari personalizzate</p>
-          </div>
+
+
+
         </div>
       </div>
     </div>
   </main>
 </div>
+<script>
+  document.querySelectorAll('.category-button').forEach(button => {
+    button.addEventListener('click', () => {
+      // Attiva il bottone cliccato
+      document.querySelectorAll('.category-button').forEach(btn =>
+        btn.classList.remove('category-button-active')
+      );
+      button.classList.add('category-button-active');
+
+      const category = button.getAttribute('data-category');
+
+      document.querySelectorAll('.department-container').forEach(dep => {
+        const type = dep.getAttribute('data-type');
+        if (category === 'all' || type === category) {
+          dep.style.display = 'flex'; // o 'block', a seconda del layout
+        } else {
+          dep.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+
 </body>
 </html>
 
