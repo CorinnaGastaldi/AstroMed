@@ -1,28 +1,33 @@
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
 .info-container {
   display: flex;
   padding-bottom: 1rem;
   flex-direction: column;
-
   gap: 2rem;
   flex: 1 0 0;
-
   height: 768px;
 }
 
-
-
 .department-container {
   display: flex;
-
   padding: 1.5rem 1rem;
   align-items: start;
   gap: 2rem;
   flex-direction: column;
-
+  max-width: 100%;
   border-radius: 1rem;
   border: 0.09375rem solid var(--am-grey-200);
   background: var(--am-white);
-
+  .departments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
 
   text-decoration: none;
   color: inherit;
@@ -67,7 +72,7 @@
 
 }
 
-/* Cambia colore dei non attivi quando deselezionati */
+/* Changes the non-active buttons color when deselected */
 .category-button:not(.category-button-active) p {
   color: var(--am-grey-800); /* testo bianco nei non attivi */
 }
