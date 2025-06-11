@@ -1,6 +1,6 @@
 import { enableContinueButton } from './new-booking-functions.js'
 
-document.getElementById('available-date').addEventListener('click', function (event) {
+document.getElementById('available-date').addEventListener('click', function () {
     const selectedDay = document.getElementById('available-date');
     selectedDay.classList.add('single-day-container-selected');
 
@@ -11,7 +11,7 @@ document.getElementById('available-date').addEventListener('click', function (ev
     }
 })
 
-document.getElementById('available-time').addEventListener('click', function (event) {
+document.getElementById('available-time').addEventListener('click', function () {
     const selectedTime = document.getElementById('available-time');
 
     selectedTime.classList.add('single-time-container-selected');
@@ -19,6 +19,6 @@ document.getElementById('available-time').addEventListener('click', function (ev
     // Makes the checked icon visible
     const selectedIcon = selectedTime.children[1]
     if (selectedIcon) selectedIcon.classList.remove('check-icon-hidden');
-    
+
     enableContinueButton(true);
 })
