@@ -268,7 +268,6 @@
                                  class="container-fluid d-flex flex-column align-items-center gap-3 overflow-auto"
                                  style="padding-right: 1px"
                             >
-                                <!-- Filled with performances.json -->
                                 <div class="doctor-card">
                                     <div class="d-flex flex-row gap-3 align-items-center">
                                         <img class="doctor-card-image" src="../img/doctors/doctor-seo.png" alt="Doctor image">
@@ -295,7 +294,7 @@
                                             Vedi profilo
                                         </a>
 
-                                        <svg class="icon-32 icon-blue">
+                                        <svg class="icon-32 icon-blue check-icon-hidden">
                                             <use xlink:href="../icons/check-icon.svg#check-icon"></use>
                                         </svg>
 
@@ -313,17 +312,14 @@
                                     Indietro
                             </a>
 
-                            <a href=""
-                               class="button-link"
+                            <button id="continue-button"
+                                    class="am-btn am-btn-primary am-btn-xl text-button-strong text-color-white"
+                                    type="button"
+                                    disabled
+                                    onclick="handleContinue('new-booking-date-selection.html')"
                             >
-                                <button id="continue-button"
-                                        class="am-btn am-btn-primary am-btn-xl text-button-strong text-color-white"
-                                        type="button"
-                                        disabled
-                                >
-                                    Scegli l'orario
-                                </button>
-                            </a>
+                                Scegli l'orario
+                            </button>
 
                         </div>
                     </div>

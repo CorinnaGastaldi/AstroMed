@@ -224,3 +224,21 @@ button[disabled]{
   height: 15.41rem;
   flex-shrink: 0;
 }
+
+.horizontal-divider {
+    height: 2px;
+    width: 100%;
+    background-color: var(--am-grey-200);
+}
+
+.horizontal-divider-s {
+    height: 1px;
+    width: 100%;
+    background-color: var(--am-grey-200);
+}
+
+.vertical-divider {
+    width: 1px;
+    height: 100%;
+    background-color: var(--am-grey-200);
+}

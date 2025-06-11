@@ -25,7 +25,7 @@ function renderPerformances(list) {
 
         card.innerHTML = `
             <p class="text-color-black text-body-regular">${item.name}</p>
-            <svg class="icon-32 icon-blue d-none">
+            <svg class="icon-32 icon-blue check-icon-hidden">
                 <use xlink:href="../icons/check-icon.svg#check-icon"></use>
             </svg>
         `;
@@ -52,13 +52,13 @@ document.getElementById('available-performances').addEventListener('click', func
     if (previousSelected) {
         previousSelected.classList.remove('performance-card-selected');
         const icon = previousSelected.querySelector('svg');
-        if (icon) icon.classList.add('d-none');
+        if (icon) icon.classList.add('check-icon-hidden');
     }
 
     // Selects the new card
     card.classList.add('performance-card-selected');
     const selectedIcon = card.querySelector('svg');
-    if (selectedIcon) selectedIcon.classList.remove('d-none');
+    if (selectedIcon) selectedIcon.classList.remove('check-icon-hidden');
 
     enableContinueButton(true);
 });

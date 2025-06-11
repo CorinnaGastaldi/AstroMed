@@ -5,10 +5,11 @@
     "category": "Reparto",
     "categoryId": "ward",
     "location": {
-      "floor": "Secondo terra",
+      "floor": "Secondo piano",
       "entrance": "Ala 2"
     },
-    "info": "Il reparto di Cardiologia AstroCare si occupa della prevenzione, diagnosi e trattamento delle malattie cardiovascolari.",
+    "phone": "+345 2020876",
+    "info": "Il reparto di Cardiologia AstroMed si occupa della prevenzione, diagnosi e trattamento delle malattie cardiovascolari.",
     "opening-hours": {
       "week": "8:30 - 19:00",
       "weekend": "9:00 - 13:00"
