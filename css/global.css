@@ -8,12 +8,12 @@ html, body {
 }
 
 .content-overflow-long {
-    height: 48rem;
+    height: 47rem;
     padding-right: 1px;
 }
 
 .content-overflow-regular {
-    height: 630px;
+    height: 38.375rem;
     padding-right: 1px;
 }
 
