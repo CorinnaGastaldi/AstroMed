@@ -69,6 +69,7 @@
 
 .category-button-active span {
   color: var(--am-purple-600);
+  font-weight: 500;
 
 }
 
