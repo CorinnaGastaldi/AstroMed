@@ -71,6 +71,7 @@ main {
     align-items: center;
     border-radius: 10rem;
     border: none;
+    background: var(--am-white);
 }
 
 .am-btn-xl {
@@ -99,7 +100,6 @@ main {
 }
 
 
-
 button:disabled,
 button[disabled]{
     opacity: 0.4;
@@ -113,6 +113,12 @@ button[disabled]{
     background-color: var(--am-white);
     color: var(--am-grey-950);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.am-btn-danger {
+    border: none;
+    background: var(--am-white);
+    color: #FF3B30;
 }
 
 .icon-white {
