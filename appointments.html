@@ -75,6 +75,125 @@
             </button>
         </div>
 
+        <!-- Appointment details -->
+        <div id="ad-section" class="ad-background">
+            <div class="ad-container">
+                <div class="container-fluid d-flex flex-row justify-content-between align-items-center">
+                    <h2 class="text-title-2 text-color-black">Visita di controllo</h2>
+                    <svg class="icon-36 icon-black" onclick="closeAppointmentDetails()">
+                        <use xlink:href="icons/close-icon.svg#close-icon"></use>
+                    </svg>
+                </div>
+                <div class="container-fluid">
+                    <div class="row justify-content-evenly">
+                        <div class="col d-flex flex-row gap-3">
+                            <div class="ad-icon-container">
+                                <img src="icons/clock-icon-small.svg"
+                                     alt="Clock icon"
+                                     class="icon-32 icon-purple"
+                                >
+                            </div>
+                            <div class="d-flex flex-col flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">Data & Ora</p>
+                                <p class="text-body-strong text-color-black">3 Giugno 3045<br>9:00 - 10:00</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex flex-row gap-3">
+                            <div class="ad-icon-container">
+                                <img src="icons/map-point-icon-small.svg"
+                                     alt="Clock icon"
+                                     class="icon-32 icon-purple"
+                                >
+                            </div>
+                            <div class="d-flex flex-col flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">Luogo</p>
+                                <p class="text-body-strong text-color-black">Ala 2 - Stanza 42<br>Astrocare Sidera</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex flex-row gap-3">
+                            <div class="ad-icon-container">
+                                <img src="icons/stethoscope-icon.svg"
+                                     alt="Clock icon"
+                                     class="icon-32 icon-purple"
+                                >
+                            </div>
+                            <div class="d-flex flex-col flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">Medico</p>
+                                <p class="text-body-strong text-color-black">Dr. Seo Jun Kim<br>Ortopedico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="container-fluid d-flex flex-column gap-3">
+                    <h3 class="text-title-3 text-color-black">Dettagli paziente</h3>
+                    <div class="container-fluid">
+                        <div class="row gap-3 mb-3">
+                            <div class="col d-flex flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">Nome</p>
+                                <p class="text-body-strong text-color-black">Angelo Spina</p>
+
+                            </div>
+                            <div class="col d-flex flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">Data di nascita</p>
+                                <p class="text-body-strong text-color-black">03/05/3000</p>
+
+                            </div>
+                        </div>
+                        <div class="row gap-3 mb-3">
+                            <div class="col d-flex flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">Sesso</p>
+                                <p class="text-body-strong text-color-black">Uomo</p>
+                            </div>
+                            <div class="col d-flex flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">N° riconoscimento universale</p>
+                                <p class="text-body-strong text-color-black">6565F65RGL97H6778</p>
+
+                            </div>
+                        </div>
+                        <div class="row gap-3 mb-3">
+                            <div class="col d-flex flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">Indirizzo</p>
+                                <p class="text-body-strong text-color-black">Terza galassia, 44esima Stella Cadente</p>
+                            </div>
+                            <div class="col d-flex flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">Compagnia assicurativa</p>
+                                <p class="text-body-strong text-color-black">Nebula Insurance</p>
+
+                            </div>
+                        </div>
+                        <div class="row gap-3">
+                            <div class="col d-flex flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">Telefono</p>
+                                <p class="text-body-strong text-color-black">74 024 7475 4765 9</p>
+
+                            </div>
+                            <div class="col d-flex flex-column gap-2">
+                                <p class="text-body-light text-color-dark-grey">Email</p>
+                                <p class="text-body-strong text-color-black">angispina01@saturno.gal</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="container-fluid d-flex flex-column gap-3">
+                    <h3 class="text-title-3 text-color-black">Preparazione</h3>
+                    <p class="text-body-regular text-color-black">
+                        Prima della visita, è consigliato raccogliere informazioni sui sintomi, indicando l’inizio e la presenza di eventuali traumi o eventi scatenanti. È utile che siano portati eventuali esami diagnostici effettuati in precedenza, come radiografie o risonanze, insieme a un elenco dei farmaci assunti.
+                    </p>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="container-fluid d-flex flex-column">
+                    <div class="row gap-3 mx-0">
+                        <button class="col am-btn am-btn-danger text-button-strong">Cancella prenotazione</button>
+                        <button class="col-6 am-btn am-btn-regular text-button-strong">Modifica prenotazione</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
         <div class="d-flex main-content gap-4">
             <!-- Sidebar-->
             <nav class="navbar">
@@ -191,6 +310,7 @@
 
                 <!-- Main content -->
                 <div class="d-flex flex-column gap-4 mt-4">
+
                     <div class="d-flex flex-row justify-content-between align-items-center">
                         <a href="home.html" class="am-btn am-btn-secondary text-button-strong text-color-black">
                             Indietro
