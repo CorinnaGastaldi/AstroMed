@@ -13,7 +13,7 @@
 .home-grid-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     background-color: var(--am-white);
     border-radius: 1.875rem;
     padding: 2rem;
@@ -32,17 +32,42 @@
     gap: 1rem;
     font-family: Trap, sans-serif;
     text-align: center;
+    align-items: center;
     font-size: 1.875rem;
     max-width: 23.625rem;
 }
 
 .manage-bookings {
-    grid-area: manage-bookings;
+  grid-area: manage-bookings;
+  background-image: url('../img/home/appointments-background.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  padding: 1rem 2rem;
+  gap: 2rem;
+}
+
+.manage-bookings-top{
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: row;
 }
 
 .dossier {
     grid-area: dossier;
     max-width: 23.625rem;
+    align-items: start;
+    gap: 1.5rem;
+}
+
+.dossier-item{
+  display: flex;
+  padding: 0.875rem 1rem;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .talk-to-astro {
@@ -62,4 +87,5 @@
 
 .information {
     grid-area: information;
+    background-image: url('../img/home/map-home.png');
 }
