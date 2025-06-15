@@ -20,8 +20,7 @@
       "Ecocardiografia",
       "Test da sforzo",
       "Monitoraggio Holter 24h"
-    ],
-    "url": "map-info.html"
+    ]
   },
 
   {
@@ -33,6 +32,7 @@
       "floor": "Piano terra",
       "entrance": "Ingresso 1"
     },
+    "phone": "+345 2020876",
     "info": "Il Centro informazioni fornisce assistenza, orientamento e supporto a tutti i visitatori della struttura.",
     "opening-hours": {
       "week": "7:30 - 19:30",
@@ -44,8 +44,7 @@
       "Informazioni su reparti e orari",
       "Stampa ticket e prenotazioni",
       "Assistenza linguistica di base"
-    ],
-    "url": ""
+    ]
   },
 
   {
@@ -57,6 +56,7 @@
       "floor": "Piano terra",
       "entrance": "Ingresso 1"
     },
+    "phone": "+345 2020876",
     "info": "La Farmacia Galattica fornisce medicinali, dispositivi medici e consulenze farmaceutiche a pazienti e personale sanitario.",
     "opening-hours": {
       "week": "8:30 - 18:00",
@@ -68,8 +68,7 @@
       "Consulenze su terapie farmacologiche",
       "Distribuzione dispositivi medici",
       "Preparazioni galeniche"
-    ],
-    "url": ""
+    ]
   },
 
   {
@@ -81,6 +80,7 @@
       "floor": "Secondo piano",
       "entrance": "Ala 2"
     },
+    "phone": "+345 2020876",
     "info": "Il Laboratorio analisi si occupa di esami di laboratorio ematochimici, microbiologici e molecolari.",
     "opening-hours": {
       "week": "7:00 - 16:00",
@@ -92,8 +92,7 @@
       "Esami urine e feci",
       "Analisi ormonali e immunologiche",
       "Test genetici e PCR"
-    ],
-    "url": ""
+    ]
   },
 
   {
@@ -105,6 +104,7 @@
       "floor": "Terzo piano",
       "entrance": "Ala 1"
     },
+    "phone": "+345 2020876",
     "info": "Il reparto di Neurologia è specializzato nella diagnosi e cura delle malattie del sistema nervoso centrale e periferico.",
     "opening-hours": {
       "week": "8:00 - 17:00",
@@ -116,8 +116,7 @@
       "Elettroencefalogramma (EEG)",
       "Risonanza magnetica cerebrale",
       "Follow-up per malattie croniche"
-    ],
-    "url": ""
+    ]
   },
 
   {
@@ -129,6 +128,7 @@
       "floor": "Primo piano",
       "entrance": "Ala 3"
     },
+    "phone": "+345 2020876",
     "info": "L'Ambulatorio di Ortopedia AstroCare è specializzato nella diagnosi e trattamento delle patologie osteo-articolari.",
     "opening-hours": {
       "week": "8:30 - 19:00",
@@ -140,7 +140,6 @@
       "Chirurgia ortopedica mini-invasiva",
       "Terapie fisiche e riabilitazione",
       "Protesi articolari personalizzate"
-    ],
-    "url": ""
+    ]
   }
 ]

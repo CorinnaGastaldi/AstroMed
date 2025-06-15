@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/accessibility-and-language.css">
 
     <script src="js/global-functions.js" defer></script>
+    <script src="js/map-info-functions.js" type="module"></script>
 
     <title>AstroMed</title>
   </head>
@@ -200,37 +201,61 @@
 
           <div class="d-flex flex-column gap-3 align-items-start overflow-y-auto" style="height:768px">
             <div class="info-map-container">
-              <h2 class="text-title-2 text-color-black">Cardiologia</h2>
+              <h2 id="dep-name"
+                  class="text-title-2 text-color-black">
+                Cardiologia
+              </h2>
               <div class="d-flex flex-row align-items-center gap-5 px-4 py-0">
                 <img src="img/maps/map-detail.png" alt="Map detail" class="img-100">
                 <div class="d-flex flex-column align-items-start gap-3">
-                  <p class="text-body-regular text-color-dark-grey">
+                  <p id="dep-info"
+                     class="text-body-regular text-color-dark-grey"
+                  >
                     Il reparto di Cardiologia AstroMed si occupa della prevenzione, diagnosi e trattamento delle malattie cardiovascolari.
                   </p>
                   <div class="horizontal-divider-s"></div>
                   <p class="text-body-strong text-color-black">Orari</p>
                   <div class="container-fluid d-flex flex-row justify-content-between">
                     <p class="text-body-regular text-color-dark-grey">Lunedì - Venerdì</p>
-                    <p class="text-body-regular text-color-dark-grey">8:30 - 19:00</p>
+                    <p id="dep-hours-weekdays"
+                       class="text-body-regular text-color-dark-grey">
+                      8:30 - 19:00
+                    </p>
                   </div>
                   <div class="container-fluid d-flex flex-row justify-content-between">
                     <p class="text-body-regular text-color-dark-grey">Sabato</p>
-                    <p class="text-body-regular text-color-dark-grey">9:00 - 13:00</p>
+                    <p id="dep-hours-weekend"
+                       class="text-body-regular text-color-dark-grey">
+                      9:00 - 13:00
+                    </p>
                   </div>
                   <div class="horizontal-divider-s"></div>
                   <p class="text-body-strong text-color-black">Sede e contatti</p>
                   <div class="container-fluid d-flex flex-row justify-content-between">
-                    <p class="text-body-light text-color-dark-grey">Reparto</p>
-                    <p class="text-body-regular text-color-dark-grey">Secondo piano - Ala 2</p>
+                    <p id="dep-category"
+                       class="text-body-light text-color-dark-grey">
+                      Reparto
+                    </p>
+                    <p id="dep-location"
+                       class="text-body-regular text-color-dark-grey"
+                    >
+                      Secondo piano - Ala 2
+                    </p>
                   </div>
                   <div class="container-fluid d-flex flex-row justify-content-between">
                     <p class="text-body-light text-color-dark-grey">Telefono</p>
-                    <p class="text-body-regular text-color-dark-grey">+345 2020876</p>
+                    <p id="dep-phone"
+                       class="text-body-regular text-color-dark-grey"
+                    >
+                      +345 2020876
+                    </p>
                   </div>
                   <div class="horizontal-divider-s"></div>
                 </div>
               </div>
-              <p class="text-body-regular text-color-dark-grey">
+              <p id="dep-description"
+                 class="text-body-regular text-color-dark-grey"
+              >
                 Presso il nostro reparto operano cardiologi esperti che offrono consulti specialistici, esami diagnostici e monitoraggio delle principali patologie cardiache, come ipertensione, aritmie, insufficienza cardiaca e cardiopatie ischemiche.
               </p>
             </div>
@@ -241,7 +266,9 @@
                   <h2 class="text-title-3 text-color-black">Prestazioni</h2>
                 </div>
               </div>
-              <div class="d-flex flex-column align-items-start w-100">
+              <div id="dep-performances"
+                   class="d-flex flex-column align-items-start w-100"
+              >
                 <p class="text-body-regular text-color-dark-grey py-3">Elettrocardiogramma (ECG)</p>
                 <div class="horizontal-divider-s"></div>
                 <p class="text-body-regular text-color-dark-grey py-3">Ecocardiografia</p>
