@@ -15,7 +15,6 @@ function renderDepartments(list) {
     container.innerHTML = '';
 
     list.forEach(info => {
-        debugger
         const col = document.createElement('a');
         col.className = 'department-container';
         col.setAttribute('data-type', info.category);

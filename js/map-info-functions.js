@@ -2,11 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('../data/departments.json')
         .then(response => response.json())
         .then(data => {
-            debugger
             const params = new URLSearchParams(window.location.search);
             const deptId = params.get('id') || 'cardiology'; // fallback per test
-            console.log('ID da URL:', deptId);
-            console.log('Tutti gli ID disponibili:', data.map(d => d.id));
 
             const dept = data.find(d => d.id === deptId);
             if (!dept) return;
