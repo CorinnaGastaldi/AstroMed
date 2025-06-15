@@ -161,6 +161,11 @@ button[disabled]{
     width: 1.5rem;
 }
 
+.icon-64 {
+  height: 4rem;
+  width: 4rem;
+}
+
 .profile-rectangle{
     width: 0.375rem;
     height: 3rem;
