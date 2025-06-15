@@ -52,3 +52,7 @@
     background: var(--am-purple-100);
 }
 
+.ad-details-close-btn {
+    border: none;
+    background: none;
+}
