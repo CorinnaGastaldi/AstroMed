@@ -13,7 +13,6 @@
 .home-grid-card {
     display: flex;
     flex-direction: column;
-
     background-color: var(--am-white);
     border-radius: 1.875rem;
     padding: 2rem;
@@ -23,8 +22,8 @@
 
 .new-booking {
     grid-area: new-booking;
-    background: linear-gradient(180deg, rgba(132, 99, 246, 0.00) 0%, #8463F6 70%), url('../img/home/new-booking-pattern.png');
-    background-color: var(--am-purple-500, #8463F6);
+    background: linear-gradient(180deg, rgba(132, 99, 246, 0.00) 0%, var(--am-purple-500) 70%), url('../img/home/new-booking-pattern.png');
+    background-color: var(--am-purple-500);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -37,22 +36,40 @@
     max-width: 23.625rem;
 }
 
+.img-new-booking {
+    width: 14rem;
+    height: 14rem;
+    aspect-ratio: 1/1;
+}
+
 .manage-bookings {
   grid-area: manage-bookings;
-  background-image: url('../img/home/appointments-background.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  padding: 1rem 2rem;
-  gap: 2rem;
+  padding: 0 0 2rem 0;
+  gap: 1.5rem;
 }
 
 .manage-bookings-top{
-  display: flex;
-  height: 4rem;
-  align-items: center;
-  gap: 1.5rem;
-  flex-direction: row;
+    background: linear-gradient(-90deg, rgba(132, 99, 246, 0.00) 0%, var(--am-purple-500) 100%), url('../img/home/appointments-pattern.png');
+    background-color: var(--am-purple-500);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+    border-radius: 1.875rem 1.875rem 0 0;
+}
+
+.manage-bookings-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 2rem 0 2rem;
 }
 
 .dossier {
