@@ -1,9 +1,12 @@
 {
-  "name": "Dottor Totem",
+  "name": "astromed",
   "version": "1.0.0",
-  "description": "",
+  "description": "AstroMed medical appointment management kiosk system",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "author": "Doctor Totem",
+  "license": "UNLICENSED"
 }
+
