@@ -22,6 +22,26 @@ function closeALSettings() {
     alAccessibility.classList.add("d-none");
 }
 
+//Toggles the Privacy accessibility setting
+function togglePrivacy() {
+    const privacyButton = document.getElementById('al-privacy-button');
+    const privacyOffIcon = document.getElementById('al-privacy-off-icon');
+    const privacyOnIcon = document.getElementById('al-privacy-on-icon');
+    const privacyText = document.getElementById('al-privacy-text');
+
+    privacyOffIcon.classList.toggle('d-none');
+    privacyOnIcon.classList.toggle('d-none');
+
+    if (privacyOnIcon.classList.contains('d-none')) {
+        privacyText.textContent = 'Attiva';
+        privacyButton.classList.remove('al-privacy-selected');
+    } else {
+        privacyText.textContent = 'Disattiva';
+        privacyButton.classList.add('al-privacy-selected');
+    }
+}
+
+
 // Opens and closes the sidebar
 function toggleNav() {
     // Toggle text

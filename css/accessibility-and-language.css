@@ -34,6 +34,18 @@
     border: 3px solid #FFF;
 }
 
+.al-privacy {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2.5rem 4rem 2.5rem 7.688rem;
+}
+
+.al-privacy-selected {
+    padding: 2.313rem 3.813rem 2.313rem 7.5rem;
+    border: 3px solid #FFF;
+}
+
 .al-close-button {
     display: flex;
     justify-content: center;
