@@ -113,4 +113,5 @@ html, body {
   gap: 0.625rem;
   background: url(/img/robot-info.png);
   background-size: contain;
+  border-radius: 0.5rem;
 }

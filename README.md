@@ -6,8 +6,8 @@
 Il progetto è stato sviluppato nell’ambito del corso di Comunicazione Visiva e Design delle Interfacce (**CVeDI**) del corso di Laurea Magistrale di Scienze e Tecnologie della Comunicazione, con l’obiettivo di creare un’esperienza utente rassicurante, accessibile e funzionale per la **gestione delle prenotazioni mediche**.
 
 L’interfaccia è completamente sviluppata in **HTML5**, **CSS3**, **Jason** e **JavaScript**.
-- Il sistema totem è pensato per essere visualizzato su schermo con dimensione: **1366 x 1024**.
-- Mentre il companion con dimensione: **1600 x 1026**.
+- Il sistema totem è pensato per essere visualizzato su schermo con dimensione: **1366px x 102px4**.
+- Mentre il companion con dimensione: **1600px x 1024px**.
 
 ---
 
