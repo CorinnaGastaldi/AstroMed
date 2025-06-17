@@ -10,7 +10,7 @@ html, body {
   display: flex;
   height: 64rem;
   width: 23.875rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
@@ -18,37 +18,16 @@ html, body {
 }
 
 .weather-container {
-  height: 12.5rem;
-  width: 23.875rem;
   display: flex;
-  padding-top: 1.8125rem;
-  gap: 0.75rem;
+  width: 20.875rem;
+  height: 20.9375rem;
+  padding: 1.25rem 1.75rem;
   flex-direction: column;
   align-items: center;
-  background: var(--am-purple-200);
-}
+  gap: 1rem;
 
-.day-container {
-  display: flex;
-  height: 2.5rem;
-  width: 5.75rem;
-  padding: 0 1rem;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0.625rem;
-  background: var(--am-purple-500);
-}
-
-.time-container {
-  display: flex;
-  width: 23.875rem;
-  height: 11.5rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1.25rem;
-  background: var(--am-purple-900);
+  border-radius: 0.5rem;
+  background: url("/img/weather-container.png");
 }
 
 .room-container {
@@ -108,10 +87,30 @@ html, body {
 
 .time-font {
   color: var(--am-white);
-  height: 6.875rem;
   font-family: Aspekta, serif;
   font-size: 5.625rem;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 5.625rem;
+}
+
+.temperature-font {
+  color: var(--am-white);
+  font-family: Aspekta, serif;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 5rem;
+}
+
+.robot-container {
+  display: flex;
+  width: 20.875rem;
+  height: 11.1875rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  background: url(/img/robot-info.png);
+  background-size: contain;
 }

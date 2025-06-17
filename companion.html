@@ -16,63 +16,49 @@
     <div class="d-flex flex-row">
       <!-- Parte sinistra-->
       <div class="companion-info-container">
-        <div class="navbar-brand px-4 py-0">
+        <div class="navbar-brand">
           <img src="icons/astromed-logo.svg" alt="AstroMed Logo">
           <span class="text-title-2 text-color-black">AstroMed</span>
         </div>
 
         <!-- Annunci-->
-        <div class="d-flex flex-column gap-1 align-items-start px-5 py-4">
+        <div class="d-flex flex-column align-items-start">
           <p class="text-title-3 text-color-black">Annunci</p>
-          <div class="d-flex flex-column gap-3">
-            <p class="text-body-regular text-color-dark-grey">Inaugurazione Nuova Area Medica
+          <p class="text-body-regular text-color-dark-grey">Inaugurazione Nuova Area Medica
             Siamo entusiasti di annunciare l’apertura della nuova area di Medicina Rigenerativa e Nanoterapia! Offriamo trattamenti mirati per la rigenerazione cellulare, e la gestione di patologie complesse.</p>
-            <div class="gap-2">
-              <p class="text-body-strong text-color-dark-grey">Totem Self-Service</p>
-              <p class="text-body-regular text-color-dark-grey">Usa i nostri totem per prenotare appuntamenti, consultare il dossier sanitario e molto altro. Per ogni domanda, chatbot è a disposizione.</p>
-            </div>
+        </div>
+        <div class="d-flex flex-column align-items-start">
+          <p class="text-title-3 text-color-black">Totem Self-Service</p>
+          <p class="text-body-regular text-color-dark-grey">Usa i nostri totem per prenotare appuntamenti, consultare il dossier sanitario e molto altro.</p>
+        </div>
 
+        <!-- Astro-->
+        <div class="robot-container">
+          <div class="d-flex flex-column align-items-start gap-2">
+            <p class="text-body-caption text-color-dark-grey">Hai bisogno di aiuto?</p>
+            <p class="text-title-2 text-color-dark-grey">Chiedi ad <br>Astro</p>
           </div>
         </div>
 
-        <!-- Meteo-->
-        <div class="d-flex flex-column">
-          <div class="weather-container">
-          <div class="d-flex flex-row gap-5 align-items-center p-3">
-            <div class="d-flex flex-column gap-2 align-items-center">
-              <p class="text-title-1 text-color-black">30°C</p>
-              <p class="text-body-strong text-color-black">86°F</p>
+        <!-- Meteo e data-->
+        <div class="weather-container">
+          <div class="d-flex flex-row align-items-start w-100 justify-content-between">
+            <div class="d-flex flex-column gap-2">
+              <p class="temperature-font">30°</p>
+              <div class="d-flex flex-column align-items-start gap-2">
+                <p class="text-body-caption text-color-white">H:10°   L:5°</p>
+                <p class="text-body-strong text-color-white">Galassia 626</p>
+              </div>
             </div>
-            <div class="d-flex flex-column align-items-center">
-              <img src="icons/weather-icons/windy-weather.svg" alt="Weather icon">
-              <p class="text-body-strong text-color-black">Galassia 626</p>
-            </div>
+            <img src="icons/weather-icons/meteor-weather.svg" alt="Meteor icon" style="width: 110px; height: 113px;">
           </div>
-
-          <div class="d-flex flex-row justify-content-between w-100">
-            <div class="day-container">
-              <p class="text-body-caption text-color-white">VEN</p>
-              <img src="icons/weather-icons/cloudy-weather.svg" alt="Weather icon">
-            </div>
-            <div class="day-container">
-              <p class="text-body-caption text-color-white">SAB</p>
-              <img src="icons/weather-icons/stormy-weather.svg" alt="Weather icon">
-            </div>
-            <div class="day-container">
-              <p class="text-body-caption text-color-white">DOM</p>
-              <img src="icons/weather-icons/cloudy-weather.svg" alt="Weather icon">
-            </div>
-            <div class="day-container">
-              <p class="text-body-caption text-color-white">LUN</p>
-              <img src="icons/weather-icons/meteor-weather.svg" alt="Weather icon">
-            </div>
-          </div>
-        </div>
-          <div class="time-container">
-            <p class="time-font text-color-white">16:37</p>
+          <div class="horizontal-divider"></div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <p class="time-font">16:37</p>
             <p class="text-body-strong text-color-white">Giovedì | 25 Luglio 3045</p>
           </div>
         </div>
+
       </div>
 
       <!-- Parte destra-->
