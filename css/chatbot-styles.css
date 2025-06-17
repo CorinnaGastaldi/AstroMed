@@ -1,0 +1,45 @@
+.chatbot-container{
+  display: flex;
+  padding: 16px 24px 0px 24px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.conversation-container {
+  display: flex;
+  width: 100%;
+  padding: 64px 0px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: end;
+  gap: 32px;
+  flex: 1 0 0;
+}
+
+.chatbot-bar{
+  display: flex;
+  height: 64px;
+  padding: 16px 6px 16px 24px;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+
+  border-radius: 50px;
+  border: 1.5px solid var(--am-grey-200);
+  background: var(--am-white);
+}
+
+.icon-circle{
+  display: flex;
+  width: 51px;
+  height: 51px;
+  padding: 13px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50px;
+  background: var(--am-purple-100);
+}
