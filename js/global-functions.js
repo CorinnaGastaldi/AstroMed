@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+  toggleNav()
+})
+
 // Opens the Language and Accessibility settings
 function openALSettings(type) {
     const alSection = document.getElementById("al-section")
