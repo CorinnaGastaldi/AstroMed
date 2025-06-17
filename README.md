@@ -7,7 +7,7 @@ Il progetto è stato sviluppato nell’ambito del corso di Comunicazione Visiva 
 
 L’interfaccia è completamente sviluppata in **HTML5**, **CSS3**, **Jason** e **JavaScript**.
 - Il sistema totem è pensato per essere visualizzato su schermo con dimensione: **1366 x 1024**.
-- Mentre il companino con dimensione: **1600 x 1026**.
+- Mentre il companion con dimensione: **1600 x 1026**.
 
 ---
 
