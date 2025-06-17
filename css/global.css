@@ -141,6 +141,10 @@ button[disabled]{
     fill: var(--am-blue-500);
 }
 
+.icon-pink{
+  fill:var(--am-pink-500);
+}
+
 .icon-40 {
     height: 2.5rem;
     width: 2.5rem;
