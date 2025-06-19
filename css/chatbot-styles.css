@@ -17,13 +17,16 @@
 
 }
 
-.user-message {
-  max-width: 44rem;
+.conversation-message {
+  max-width: 36rem;
   display: flex;
   padding: 2rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+.user-message {
   border-radius: 1.563rem 1.563rem 0.625px 1.563rem;
   background: var(--am-purple-600);
   box-shadow: 0 4px 12px 0 rgba(137, 106, 247, 0.40);
@@ -36,14 +39,9 @@
 }
 
 .assistant-message {
-  max-width: 44rem;
-  display: flex;
-  padding: 2rem;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
   border-radius: 1.563rem 1.563rem 1.563rem 0.625px;
   background: var(--am-white);
+  box-shadow: 0 4px 12px 0 rgba(190, 190, 190, 0.24);
 }
 
 .assistant-image {
