@@ -66,7 +66,7 @@ git clone [link-del-repository]
 - Per una corretta visualizzazione del progetto, è necessario aprirlo in un ambiente che supporti un server locale, come:
   - WebStorm (eseguendo il progetto con il browser interno o “Open in browser”)
   - Visual Studio Code con l’estensione Live Server attiva
-  - 
+  
 
 - Aprire inizialmente il file `index.html` nel browser tramite uno di questi strumenti (non aprirlo direttamente da file system).
 
