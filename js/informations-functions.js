@@ -19,7 +19,7 @@ function renderDepartments(list) {
         col.className = 'department-container';
         col.setAttribute('data-type', info.category);
         col.setAttribute('id', info.id);
-        col.setAttribute('href', 'map-info.html?id='+info.id);
+        col.setAttribute('href', '4.1_map-info.html?id='+info.id);
 
         col.innerHTML = `
           <div class="d-flex flex-column">

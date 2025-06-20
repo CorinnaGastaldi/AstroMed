@@ -1,12 +1,6 @@
 import { enableContinueButton } from './new-booking-functions.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('continue-button').addEventListener('click', () => {
-        handleContinue('new-booking-visit-report.html');
-    });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
     const checkbox = document.getElementById('acceptance');
     const icon = document.getElementById('checkbox-icon');
 
