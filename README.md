@@ -63,7 +63,11 @@ La cartella principale (`AstroMed`) contiene le seguenti sottocartelle e file:
 git clone [link-del-repository]
 ```
 
-- Aprire, per iniziare, il file `index.html` con un browser moderno (es. Chrome, Firefox).
+Per una corretta visualizzazione del progetto, è necessario aprirlo in un ambiente che supporti un server locale, come:
+- WebStorm (eseguendo il progetto con il browser interno o “Open in browser”)
+- Visual Studio Code con l’estensione Live Server attiva
+
+Aprire inizialmente il file `index.html` nel browser tramite uno di questi strumenti (non aprirlo direttamente da file system).
 
 ---
 
