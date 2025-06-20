@@ -1,6 +1,6 @@
 .chatbot-container{
   display: flex;
-  padding: 5rem 2.5rem 3rem 2.5rem;
+  padding: 2rem 2.5rem 0 2.5rem;
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
@@ -8,12 +8,13 @@
 }
 
 .conversation-container {
-  height: 38.375rem;
+  height: 33rem;
   display: flex;
-  padding: 0 3.5rem;
   flex-direction: column;
   gap: 4rem;
   align-self: stretch;
+  padding: 0 2rem;
+  overflow: auto;
 
 }
 
@@ -27,7 +28,7 @@
 }
 
 .user-message {
-  border-radius: 1.563rem 1.563rem 0.625px 1.563rem;
+  border-radius: 1.563rem 1.563rem 0.625rem 1.563rem;
   background: var(--am-purple-600);
   box-shadow: 0 4px 12px 0 rgba(137, 106, 247, 0.40);
 }
@@ -39,7 +40,7 @@
 }
 
 .assistant-message {
-  border-radius: 1.563rem 1.563rem 1.563rem 0.625px;
+  border-radius: 1.563rem 1.563rem 1.563rem 0.625rem;
   background: var(--am-white);
   box-shadow: 0 4px 12px 0 rgba(190, 190, 190, 0.24);
 }
@@ -62,7 +63,6 @@
   align-items: center;
   flex-direction: row;
   gap: 16px;
-
   border-radius: 50px;
   border: 1.5px solid var(--am-grey-200);
   background: var(--am-white);
@@ -75,7 +75,6 @@
   padding: 13px;
   justify-content: center;
   align-items: center;
-
   border-radius: 50px;
   background: var(--am-purple-100);
 }

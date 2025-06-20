@@ -208,6 +208,13 @@
         </div>
 
           <!-- Main content -->
+          <div class="d-flex flex-column gap-4 mt-4">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <a href="home.html" class="am-btn am-btn-secondary text-button-strong text-color-black">
+                Indietro
+              </a>
+              <h1 class="text-title-2 text-color-black mt-2">Chiedi ad Astro</h1>
+            </div>
           <div class="container-fluid chatbot-container gap-5">
             <!-- Empty convesation -->
             <div id="conversation-empty" class="conversation-container">
@@ -226,8 +233,8 @@
           </div>
 
             <!-- Conversation-->
-            <div id="conversation" class="conversation-container justify-content-end d-none overflow-y-hidden">
-              <div id="conversation-messages" class="d-flex flex-column justify-content-end align-items-center gap-4 overflow-y-scroll content-overflow-regular">
+            <div id="conversation" class="conversation-container d-none overflow-auto content-overflow-regular">
+              <div id="conversation-messages" class="d-flex flex-column align-items-center gap-4 overflow-auto">
                 <div class="container-fluid justify-content-end d-flex flex-row align-items-end gap-4 d-none">
                 <div class="conversation-message user-message">
                   <p class="text-body-regular text-color-white">
@@ -298,6 +305,7 @@
                 <p class="text-body-regular text-color-dark-grey">Come pago un ticket?</p>
               </div>
             </div>
+          </div>
           </div>
           </div>
         </main>

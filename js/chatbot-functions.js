@@ -19,13 +19,14 @@ document.getElementById('chatbot-bar').addEventListener('click', function() {
         hiddenMessages.forEach((message, index) => {
             setTimeout(() => {
                 message.classList.remove('d-none');
-
-                // Forziamo lo scroll alla fine del contenitore dei messaggi
+                
                 messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
                 if (index === hiddenMessages.length - 1) {
                     isAnimating = false;
                 }
+
+
             }, index * 1500);
         });
     }
