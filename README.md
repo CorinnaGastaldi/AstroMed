@@ -5,9 +5,11 @@
 **Dottor Totem** è un’interfaccia realizzata per un totem medico ambientato nel contesto futuristico di **StarMed Bay**, una navicella spaziale attrezzata come avamposto sanitario avanzato.
 Il progetto è stato sviluppato nell’ambito del corso di Comunicazione Visiva e Design delle Interfacce (**CVeDI**) del corso di Laurea Magistrale di Scienze e Tecnologie della Comunicazione, con l’obiettivo di creare un’esperienza utente rassicurante, accessibile e funzionale per la **gestione delle prenotazioni mediche**.
 
-L’interfaccia è completamente sviluppata in **HTML5**, **CSS3**, **Jason** e **JavaScript**.
-- Il sistema totem è pensato per essere visualizzato su schermo con dimensione: **1366px x 1024px**.
-- Mentre il companion con dimensione: **1600px x 1024px**.
+L’interfaccia è completamente sviluppata in **HTML5**, **CSS3**, **JavaScript** e **JSON**.
+
+Visualizzazione consigliata:
+- Sistema principale: progettato per una risoluzione di 1366 × 1024 px
+- Companion: progettato per una risoluzione di 1600 × 1024 px
 
 ---
 
@@ -25,7 +27,7 @@ L’interfaccia è completamente sviluppata in **HTML5**, **CSS3**, **Jason** e 
 - HTML5
 - CSS3
 - JavaScript
-- Jason
+- JSON
 
 ---
 
@@ -85,3 +87,6 @@ git clone [link-del-repository]
 ### Note aggiuntive
 
 - Alcune funzionalità avanzate e bottoni (es. chatbot IA e triage virtuale) sono in **fase concettuale** e non ancora implementate.
+- Il Companion, essendo una parte separata, non è accessibile dalle altre pagine.
+  Per visualizzarlo, è **necessario accedere direttamente al file HTML corrispondente**,
+  tramite l’ambiente di sviluppo o inserendo manualmente il percorso nella barra del browser.
